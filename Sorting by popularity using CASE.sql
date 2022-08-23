@@ -11,7 +11,7 @@ WHEN title LIKE "%java%" THEN "java"
 WHEN title LIKE "%ruby%" THEN "ruby"
 ELSE "other_case"
 END AS language
-FROM `jrjames83-1171.sampledata.top_questions`
+FROM `sampledata.top_questions`
 )
 SELECT language, COUNT(*)
 FROM base_table
