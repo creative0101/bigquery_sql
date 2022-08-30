@@ -1,4 +1,4 @@
-# CASE + annual average increase of SQL related questions on stackoverflow + percentage of posts containing SQL in comparison vs other languages
+# CASE + annual average increase of SQL related questions on stackoverflow
 
 WITH table1 AS (
 SELECT EXTRACT(year FROM creation_date) AS year, title,
