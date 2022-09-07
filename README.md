@@ -1,4 +1,3 @@
-# bigquery_sql
-BigQuery statements
 
-This repository exists to documents my skills/ progression with SQL. 
+This repository exists to documents my skills/ progression with SQL using BigQuery and PostgreSQL.
+
