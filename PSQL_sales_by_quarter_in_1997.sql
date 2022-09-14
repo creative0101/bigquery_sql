@@ -39,9 +39,19 @@ WITH joined_table AS (
 	ON cat.category_id = prod.category_id
 )
 -- final summarizing table
-SELECT year_order, quarter, product_name, category_name, SUM(sub_total_rounded) AS sales_per_quarter
+SELECT product_name, category_name, quarter, SUM(sub_total_rounded) AS sales_per_quarter
 FROM joined_table
 WHERE year_order = 1997
-GROUP BY year_order, quarter, product_name, category_name
-ORDER BY quarter
+GROUP BY quarter, product_name, category_name
+ORDER BY product_name, 
+	CASE quarter
+	WHEN 'first' THEN 1
+	WHEN 'second' THEN 2
+	WHEN 'third' THEN 3
+	ELSE 4
+	END
+
+
+
+
 
