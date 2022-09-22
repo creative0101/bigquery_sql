@@ -1,3 +1,3 @@
 
-This repository exists to documents my skills/ progression with SQL using BigQuery and PostgreSQL.
+This repository exists to document my skills/ progression with SQL using BigQuery and PostgreSQL.
 
